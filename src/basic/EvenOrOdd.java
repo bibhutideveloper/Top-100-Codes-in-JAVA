@@ -2,14 +2,12 @@ package basic;
 
 import java.util.Scanner;
 
-public class PositiveOrNegativeNumber {
+public class EvenOrOdd {
 	public static void check(int num) {
-		if(num>=0) {
-			System.out.println("Positive");
-		}else if(num<0) {
-			System.out.println("Negative");
+		if(num%2 == 0) {
+			System.out.println("Even");
 		}else {
-			System.out.println("Number is ZERO");
+			System.out.println("Odd");
 		}
 	}
 	
@@ -17,7 +15,7 @@ public class PositiveOrNegativeNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number: ");
 		int num = sc.nextInt();
-		PositiveOrNegativeNumber.check(num);;
+		EvenOrOdd.check(num);
 		sc.close();
 	}
 
